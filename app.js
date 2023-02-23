@@ -11,33 +11,81 @@ spadesArray = ['2-S.png','3-S.png', '4-S.png', '5-S.png','6-S.png','7-S.png','8-
 
  // Create function that randomly selects "suit"  
 
-const suitOne = Math.ceil(Math.random()*4)
-const cardOne = Math.floor(Math.random()*13)
-console.log(suitOne)
+var suitOne = Math.ceil(Math.random()*4)
+var cardOne = Math.floor(Math.random()*13)
+
+var cardSelect1 // save which card was selected
+ console.log(suitOne)
 console.log(cardOne)
 // create an if statement that will chose based on suit's random array      
 
 if (suitOne == "1")
 {
     //function alert will be used if clubArray was chosen 
-    console.log(clubArray[cardOne])
+    cardSelect1 = clubArray[cardOne]
+    console.log(cardSelect1)
     document.getElementById('card1').src = "cards/" + clubArray[cardOne]
 
 } else if (suitOne == "2") {
     
      //function alert will be used if diamondArray was chosen 
-console.log(diamondArray[cardOne])
+cardSelect1 = diamondArray[cardOne]
+console.log(cardSelect1)
 document.getElementById('card1').src = "cards/" + diamondArray[cardOne]
 
 } else if (suitOne == "3") {   
      //function alert will be used if heartArray was chosen 
-
-console.log(heartArray[cardOne])
+cardSelect1 = heartArray[cardOne]
+console.log(cardSelect1)
 document.getElementById('card1').src = "cards/" + heartArray[cardOne]
 } else {
    
-     //function alert will be used if spadesArray was chosen 
-    console.log(spadesArray[cardOne]) 
-    document.getElementById('card1').src = "cards/" + spadesArray[cardOne]
+//function alert will be used if spadesArray was chosen 
+cardSelect1 = spadesArray[cardOne]
+console.log(cardSelect1) 
+document.getElementById('card1').src = "cards/" + spadesArray[cardOne]
 }
+
+document.getElementById('card1').src = "cards/" + cardSelect1
+
+
+
+// function that randomizes second player's cards
+
+var suitOne = Math.ceil(Math.random()*4)
+var cardOne = Math.floor(Math.random()*13)
+
+var cardSelect1 // save which card was selected
+ console.log(suitOne)
+console.log(cardOne)
+// create an if statement that will chose based on suit's random array      
+
+if (suitOne == "1")
+{
+    //function alert will be used if clubArray was chosen 
+    cardSelect1 = clubArray[cardOne]
+    console.log(cardSelect1)
+    document.getElementById('card2').src = "cards/" + clubArray[cardOne]
+
+} else if (suitOne == "2") {
+    
+     //function alert will be used if diamondArray was chosen 
+cardSelect1 = diamondArray[cardOne]
+console.log(cardSelect1)
+document.getElementById('card2').src = "cards/" + diamondArray[cardOne]
+
+} else if (suitOne == "3") {   
+     //function alert will be used if heartArray was chosen 
+cardSelect1 = heartArray[cardOne]
+console.log(cardSelect1)
+document.getElementById('card2').src = "cards/" + heartArray[cardOne]
+} else {
+   
+//function alert will be used if spadesArray was chosen 
+cardSelect1 = spadesArray[cardOne]
+console.log(cardSelect1) 
+document.getElementById('card2').src = "cards/" + spadesArray[cardOne]
+}
+
+document.getElementById('card2').src = "cards/" + cardSelect1
 
