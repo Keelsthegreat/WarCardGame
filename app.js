@@ -19,19 +19,25 @@ console.log(cardOne)
 
 if (suitOne == "1")
 {
-    
     //function alert will be used if clubArray was chosen 
     console.log(clubArray[cardOne])
+    document.getElementById('card1').src = "cards/" + clubArray[cardOne]
+
 } else if (suitOne == "2") {
     
      //function alert will be used if diamondArray was chosen 
 console.log(diamondArray[cardOne])
-} else if (suitOne == "3") {
-   
+document.getElementById('card1').src = "cards/" + diamondArray[cardOne]
+
+} else if (suitOne == "3") {   
      //function alert will be used if heartArray was chosen 
+
 console.log(heartArray[cardOne])
+document.getElementById('card1').src = "cards/" + heartArray[cardOne]
 } else {
    
      //function alert will be used if spadesArray was chosen 
     console.log(spadesArray[cardOne]) 
+    document.getElementById('card1').src = "cards/" + spadesArray[cardOne]
 }
+
