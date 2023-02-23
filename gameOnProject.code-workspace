@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "gameOnProject",
+		"path": "."
+	},
+	{
+		"name": "cards",
+		"path": "../../cards"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "gameOnProject"
+  }
+}

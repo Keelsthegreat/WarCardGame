@@ -12,20 +12,26 @@ spadesArray = ['2-S.png','3-S.png', '4-S.png', '5-S.png','6-S.png','7-S.png','8-
  // Create function that randomly selects "suit"  
 
 const suitOne = Math.ceil(Math.random()*4)
-
+const cardOne = Math.floor(Math.random()*13)
+console.log(suitOne)
+console.log(cardOne)
 // create an if statement that will chose based on suit's random array      
 
 if (suitOne == "1")
 {
-    alert("It was a 1 ")
+    
     //function alert will be used if clubArray was chosen 
+    console.log(clubArray[cardOne])
 } else if (suitOne == "2") {
-    alert("It was a 2")
+    
      //function alert will be used if diamondArray was chosen 
+console.log(diamondArray[cardOne])
 } else if (suitOne == "3") {
-    alert("It was a 3")
+   
      //function alert will be used if heartArray was chosen 
+console.log(heartArray[cardOne])
 } else {
-    alert("It was a 4")
+   
      //function alert will be used if spadesArray was chosen 
+    console.log(spadesArray[cardOne]) 
 }
