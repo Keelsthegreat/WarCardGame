@@ -1,91 +1,71 @@
 //Create Deck of cards
 
 
-clubArray = ['2-C.png','3-C.png', '4-C.png', '5-C.png','6-C.png','7-C.png','8-C.png','9-C.png','10-C.png','A-C.png','J-C.png','Q-C.png','K-C.png']
 
-diamondArray = ['2-D.png','3-D.png', '4-D.png', '5-D.png','6-D.png','7-D.png','8-D.png','9-D.png','10-D.png','A-D.png','J-D.png','Q-D.png','K-D.png']
+let firstPlayer = []
+let secondPlayer = []
 
-heartArray = ['2-H.png','3-H.png', '4-H.png', '5-H.png','6-H.png','7-H.png','8-H.png','9-H.png','10-H.png','A-H.png','J-H.png','Q-H.png','K-H.png']
+let player1Score = 26
+let player2Score = 26
 
-spadesArray = ['2-S.png','3-S.png', '4-S.png', '5-S.png','6-S.png','7-S.png','8-S.png','9-S.png','10-S.png','A-S.png','J-S.png','Q-S.png','K-S.png']
+// 1. Create full-deck by appending those 4 suit arrays
+let deck = [];
+// card values and types
+  let values = [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K",
+    "A",
+  ];
+let types = ["C", "D", "H", "S"];
+
+window.onload = () => {
+    buildDeck();
+    shuffleDeck();
+    }
+// 2. call dealDeck(), which uses the global full-deck to fill the 2 global sub-arrays
+//
+// bool isPlayerATurn = true; boolean keeps track of who's turn
+// isPlayerATurn = !(isPlayerATurn); while loop needed for duration of game
 
  // Create function that randomly selects "suit"  
 
-var suitOne = Math.ceil(Math.random()*4)
-var cardOne = Math.floor(Math.random()*13)
 
-var cardSelect1 // save which card was selected
- console.log(suitOne)
-console.log(cardOne)
 // create an if statement that will chose based on suit's random array      
 
-if (suitOne == "1")
-{
-    //function alert will be used if clubArray was chosen 
-    cardSelect1 = clubArray[cardOne]
-    console.log(cardSelect1)
-    document.getElementById('card1').src = "cards/" + clubArray[cardOne]
 
-} else if (suitOne == "2") {
-    
-     //function alert will be used if diamondArray was chosen 
-cardSelect1 = diamondArray[cardOne]
-console.log(cardSelect1)
-document.getElementById('card1').src = "cards/" + diamondArray[cardOne]
 
-} else if (suitOne == "3") {   
-     //function alert will be used if heartArray was chosen 
-cardSelect1 = heartArray[cardOne]
-console.log(cardSelect1)
-document.getElementById('card1').src = "cards/" + heartArray[cardOne]
-} else {
-   
-//function alert will be used if spadesArray was chosen 
-cardSelect1 = spadesArray[cardOne]
-console.log(cardSelect1) 
-document.getElementById('card1').src = "cards/" + spadesArray[cardOne]
-}
 
-document.getElementById('card1').src = "cards/" + cardSelect1
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 
 // function that randomizes second player's cards
 
-var suitOne = Math.ceil(Math.random()*4)
-var cardOne = Math.floor(Math.random()*13)
 
-var cardSelect1 // save which card was selected
- console.log(suitOne)
-console.log(cardOne)
 // create an if statement that will chose based on suit's random array      
 
-if (suitOne == "1")
-{
-    //function alert will be used if clubArray was chosen 
-    cardSelect1 = clubArray[cardOne]
-    console.log(cardSelect1)
-    document.getElementById('card2').src = "cards/" + clubArray[cardOne]
 
-} else if (suitOne == "2") {
-    
-     //function alert will be used if diamondArray was chosen 
-cardSelect1 = diamondArray[cardOne]
-console.log(cardSelect1)
-document.getElementById('card2').src = "cards/" + diamondArray[cardOne]
 
-} else if (suitOne == "3") {   
-     //function alert will be used if heartArray was chosen 
-cardSelect1 = heartArray[cardOne]
-console.log(cardSelect1)
-document.getElementById('card2').src = "cards/" + heartArray[cardOne]
-} else {
-   
-//function alert will be used if spadesArray was chosen 
-cardSelect1 = spadesArray[cardOne]
-console.log(cardSelect1) 
-document.getElementById('card2').src = "cards/" + spadesArray[cardOne]
-}
-
-document.getElementById('card2').src = "cards/" + cardSelect1
-
+function chekingscores() {
+    if (player1Score <= 0) {
+      player1Score = 0;
+      alert("Dealer Win!");
+      document.getElementById("mainbtn").disabled = true;
+    } else if (player2Score <= 0) {
+      player2Score = 0;
+      alert("User Win!");
+      document.getElementById("mainbtn").disabled = true;
+    }
+  }

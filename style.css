@@ -1,0 +1,19 @@
+body {
+    background-image: url('https://media.discordapp.net/attachments/692019678482006016/1078498596829266070/IMG_4562.jpg?width=705&height=397');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.cards {
+   text-align: center;
+   width: 700px;
+   height: 700px;
+   border: 5px solid greenyellow;
+
+}
+
+.cardss {
+    border: solid 5px blue;
+    top: -50%;
+}
