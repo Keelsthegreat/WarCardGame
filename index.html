@@ -10,26 +10,39 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <h1> War Game!</h1>
        
         <!--Create Player 1 display-->
         <!--Create Player 2 display-->
+        <div class = "player1">Player:</div>
+        <div class="score" id="userScore"></div>
         <div class="cards">
             
             <img src="./cards/BACK.png" alt="Player 1" id="card1" class="cardss" height="200">
+          
+
+        </div>
+        <div class = "player1">Dealer:</div>
+        <div class="score" id="dealerScore"></div>
+        <div class="cards">
+            
+            
             <img src="./cards/BACK.png" alt="Player 2" id="card2" class="cardss" height="200">
 
         </div>
         
         <!--Create deal button where deck is shuffled-->
-        <button class="deal" onclick="deal()">Deal Cards</button>
+        <button class="deal" >Shuffle</button>
+
+        <!-- create draw button -->
+        <button class = "drawCard" onclick= "cardGame()">Draw Next</button>
         <!--Create Reset Button-->
-        <button class="reset" onclick="reset()">Reset</button>
-        <!--Create Deck of cards -->
+        <button class="reset" onclick="location.reload()">Reset</button>
+        
 
       
     
-    <!--Randomly select a suit-->
-    suit1
+    
         
 
 
