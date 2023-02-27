@@ -124,14 +124,14 @@ function checkingScores() {
 // show me / hide me function 
 
 function toggle(){
-  let show= document.querySelector(".showMe");
+  let instructions = document.querySelector(".instructions");
   let showMe = document.getElementsByClassName("showMe");
   showMe.style.display='block';
   console.log('click')
 }
 
 function toggle2(){
-  let hide= document.querySelector(".showMe");
+  let instructions = document.querySelector(".");
   let hideMe = document.getElementsByClassName("hideMe");
   hideMe.style.display ='none';
   console.log('click1')
