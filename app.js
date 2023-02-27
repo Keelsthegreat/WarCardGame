@@ -116,7 +116,7 @@ function checkingScores() {
     document.querySelector(".drawCard").disabled = true;
   } else if (player2Score <= 0) {
     player2Score = 0;
-    alert("User Win!");
+    alert("You Win!");
     document.querySelector(".drawCard").disabled = true;
   }
 }
