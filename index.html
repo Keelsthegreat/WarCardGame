@@ -11,10 +11,11 @@
     </head>
     <body>
         
+        
+        <h1 class="header"> War Game!</h1>
+       
         <div class="superDiv">
 
-            <h1 class="header"> War Game!</h1>
-           
             <!--Create Player 1 display-->
             <!--Create Player 2 display-->
             <div class = "player1">Player:</div>
@@ -33,19 +34,22 @@
                 <img src="./cards/BACK.png" alt="Player 2" id="card2" class="cardss" height="200">
     
             </div>
-            
-            <!--Create deal button where deck is shuffled-->
-      
-    
-            
-            
+        </div>
+        
+        <!--Create deal button where deck is shuffled-->
+  
+        <div class="buttonDiv">
+
+            <!-- create draw button -->
+            <button class = "deal" onclick= "cardGame()">Draw Next</button>
+            <!--Create Reset Button-->
+            <button class="deal" onclick="location.reload()">Reset</button>
             
         </div>
         
-        <!-- create draw button -->
-        <button class = "deal" onclick= "cardGame()">Draw Next</button>
-        <!--Create Reset Button-->
-        <button class="deal" onclick="location.reload()">Reset</button>
+
+      
+    
     
         
 

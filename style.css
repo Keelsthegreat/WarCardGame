@@ -17,7 +17,7 @@ body {
   color: #FFFFFF;
   cursor: pointer;
   flex: 0 0 auto;
-  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: "pokerFont";
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -52,15 +52,21 @@ body {
 
 @font-face {
     font-family: "pokerFont" ;
-    src:url("pokerr.ttf") ;
+    src:url("PokerInOctoberDemo-Dxm3.otf") ;
 }
 
 .header {
     font-family: "pokerFont";
     font-size: 55px;
+    color: #FFFFFF;
 }
 
-.superDiv {
-    display: flex;
-    justify-content: center;
+.score {
+    font-family: "pokerFont";
+    color: #FFFFFF;
+}
+
+.player1 {
+    font-family: "pokerFont";
+    color: #FFFFFF;
 }
