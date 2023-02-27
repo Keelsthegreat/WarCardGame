@@ -4,10 +4,6 @@ body {
     background-size: cover;
 }
 
-
-
-
-
 /* CSS for buttons */
 .deal {
   background-color: #111827;
@@ -81,31 +77,25 @@ justify-content: center;
 .superDiv {
 display: flex;
 justify-content: center;
-
 } 
 
 .buttonDiv {
 display: flex;
 justify-content: center;
 padding: 20px;
-
+border:  solid 4px yellow;
 }
 
 .scoreDiv1 {
     position: relative;
     margin-top: -40px;
-    padding: -5em;
-    
-    
+    padding: -5em; 
 }
 
 .scoreDiv2 {
     position: relative;
     margin-top: -40px;
     padding: -5em;
-
-
-    
     
 }
 
@@ -122,4 +112,12 @@ padding: 20px;
 
 .hideMe {
  padding: 8px;   
+}
+
+.deal1 {
+    margin-left: 30px;
+}
+
+.deal2 {
+    margin-right: 30px;
 }
