@@ -17,7 +17,7 @@ body {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5rem;
-  padding: .75rem 1.2rem;
+  padding: .75rem 1.5rem;
   text-align: center;
   text-decoration: none #6B7280 solid;
   text-decoration-thickness: auto;
@@ -28,7 +28,8 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   width: auto; 
-  border: solid 3px red;
+  
+  
 }
 
 .deal:hover {
@@ -83,7 +84,7 @@ justify-content: center;
 display: flex;
 justify-content: center;
 padding: 20px;
-border:  solid 4px yellow;
+
 }
 
 .scoreDiv1 {
@@ -114,10 +115,3 @@ border:  solid 4px yellow;
  padding: 8px;   
 }
 
-.deal1 {
-    margin-left: 30px;
-}
-
-.deal2 {
-    margin-right: 30px;
-}
