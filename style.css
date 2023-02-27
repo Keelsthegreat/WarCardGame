@@ -8,7 +8,7 @@ body {
 
 
 
-/* CSS */
+/* CSS for buttons */
 .deal {
   background-color: #111827;
   border: 1px solid transparent;
@@ -31,7 +31,8 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: auto;
+  width: auto; 
+  border: solid 3px red;
 }
 
 .deal:hover {
@@ -120,9 +121,5 @@ padding: 20px;
 }
 
 .hideMe {
- padding: 8px ;   
-}
-
-.deal {
-    
+ padding: 8px;   
 }
