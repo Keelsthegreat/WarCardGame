@@ -11,23 +11,35 @@
     </head>
     <body>
         
-        
+        <div class="headerDiv">
+            
         <h1 class="header"> War Game!</h1>
+
+        </div>
        
         <div class="superDiv">
 
             <!--Create Player 1 display-->
             <!--Create Player 2 display-->
-            <div class = "player1">Player:</div>
-            <div class="score" id="userScore"></div>
+            <div class="scoreDiv1">
+
+                <div class = "player1">Player:</div>
+                <div class="score" id="userScore"></div>
+
+            </div>
+            <br>
             <div class="cards">
                 
                 <img src="./cards/BACK.png" alt="Player 1" id="card1" class="cardss" height="200">
               
     
             </div>
-            <div class = "player1">Dealer:</div>
-            <div class="score" id="dealerScore"></div>
+            <div class="scoreDiv2">
+
+                <div class = "player1">Dealer:</div>
+                <div class="score" id="dealerScore"></div>
+
+            </div>
             <div class="cards">
                 
                 
@@ -44,7 +56,7 @@
             <button class = "deal" onclick= "cardGame()">Draw Next</button>
             <!--Create Reset Button-->
             <button class="deal" onclick="location.reload()">Reset</button>
-            
+
         </div>
         
 

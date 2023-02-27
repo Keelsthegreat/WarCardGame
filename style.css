@@ -70,3 +70,40 @@ body {
     font-family: "pokerFont";
     color: #FFFFFF;
 }
+
+.headerDiv {
+display: flex;
+justify-content: center;
+}
+
+.superDiv {
+display: flex;
+justify-content: center;
+
+} 
+
+.buttonDiv {
+display: flex;
+justify-content: center;
+
+}
+
+.scoreDiv1 {
+    position: relative;
+    margin-top: -40px;
+    padding: -5em;
+    
+    
+}
+
+.scoreDiv2 {
+    position: relative;
+    margin-top: -40px;
+    padding: -5em;
+
+
+    
+    
+}
+
+
