@@ -120,3 +120,19 @@ function checkingScores() {
     document.querySelector(".drawCard").disabled = true;
   }
 }
+
+// show me / hide me function 
+
+function toggle(){
+  let show= document.querySelector(".showMe");
+  let showMe = document.getElementById("showMe");
+  showMe.style.display='block';
+  console.log('click')
+}
+
+function toggle2(){
+  let hide= document.querySelector(".");
+  let hideMe = document.getElementById("hideMe");
+  hideMe.style.display ='none';
+  console.log('click1')
+}

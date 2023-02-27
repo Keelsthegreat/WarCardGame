@@ -59,6 +59,7 @@ body {
     font-family: "pokerFont";
     font-size: 55px;
     color: #FFFFFF;
+    padding: 50px;
 }
 
 .score {
@@ -85,6 +86,7 @@ justify-content: center;
 .buttonDiv {
 display: flex;
 justify-content: center;
+padding: 20px;
 
 }
 
