@@ -131,7 +131,7 @@ function toggle(){
 }
 
 function toggle2(){
-  let instructions = document.querySelector(".");
+  let instructions = document.querySelector(".instructions");
   let hideMe = document.getElementsByClassName("hideMe");
   hideMe.style.display ='none';
   console.log('click1')
