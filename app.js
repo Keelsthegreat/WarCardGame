@@ -112,7 +112,7 @@ function cardGame() {
 function checkingScores() {
   if (player1Score <= 0) {
     player1Score = 0;
-    alert("Dealer Win!");
+    alert("You Lose!");
     document.querySelector(".drawCard").disabled = true;
   } else if (player2Score <= 0) {
     player2Score = 0;
