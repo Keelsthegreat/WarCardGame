@@ -12,14 +12,13 @@ let deck = [];
 let values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 let types = ["C", "D", "H", "S"];
 
+// Created a function that loads the deck, shuffle deck and score as soon as the webpage loads
 window.onload = () => {
   buildDeck();
   shuffleDeck();
   document.getElementById("userScore").innerHTML = `${player1Score}`;
   document.getElementById("dealerScore").innerHTML = `${player2Score}`;
 };
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //program to make card deck
 function buildDeck() {
