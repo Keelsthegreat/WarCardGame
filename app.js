@@ -49,6 +49,7 @@ function getCardValue(card) {
   //split card into two substrings delimiter is the "-"
   //a delimiter is one or more characters that separate text strings , hence the "-" 
 //using .split to split a string into an array of substrings, returns new array  (" ") is used as a separator, the string is split between words, hence finding the cards via delimiter
+//targeting cardValue array using !isNaN() in order to find the number inside the string
   let cardValue = card.split("-")[0];
   if (!isNaN(cardValue)) {
     return Number(cardValue);
