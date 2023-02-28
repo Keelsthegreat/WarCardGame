@@ -20,7 +20,7 @@ window.onload = () => {
   document.getElementById("dealerScore").innerHTML = `${player2Score}`;
 };
 
-//program to make card deck
+// iterating through values and types arrays to match the name of the cards inside the cards folder
 function buildDeck() {
   for (let i = 0; i < types.length; i++) {
     for (let j = 0; j < values.length; j++) {
