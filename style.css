@@ -87,18 +87,18 @@ padding: 20px;
 
 }
 
-.scoreDiv1 {
+.scoreDiv1, .scoreDiv2{
     position: relative;
     margin-top: -40px;
-    padding: -5em; 
+    text-align: center;
+    
+    
+     
 }
 
-.scoreDiv2 {
-    position: relative;
-    margin-top: -40px;
-    padding: -5em;
-    
-}
+
+
+
 
 .para {
     font-family: "pokerFont";
@@ -115,3 +115,13 @@ padding: 20px;
  padding: 8px;   
 }
 
+.btn {
+   display: flex;
+   gap: 30px;
+   text-align: center;
+   margin-left: 40%;
+}
+
+.idk {
+  text-align: center;
+}

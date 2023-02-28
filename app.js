@@ -6,7 +6,7 @@ let secondPlayer = [];
 let player1Score = 26;
 let player2Score = 26;
 
-// 1. Create full-deck by appending those 4 suit arrays
+// creating global variable for deck
 let deck = [];
 // card values and types
 let values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
@@ -45,11 +45,14 @@ function shuffleDeck() {
 
 //function to find numbers inside of a string
 
-function getCardValue(card) {
-  //split card into two substrings delimiter is the "-"
-  //a delimiter is one or more characters that separate text strings , hence the "-" 
+//split card into two substrings delimiter is the "-"
+//a delimiter is one or more characters that separate text strings , hence the "-" 
+
 //using .split to split a string into an array of substrings, returns new array  (" ") is used as a separator, the string is split between words, hence finding the cards via delimiter
+
 //targeting cardValue array using !isNaN() in order to find the number inside the string
+
+function getCardValue(card) {
   let cardValue = card.split("-")[0];
   if (!isNaN(cardValue)) {
     return Number(cardValue);
@@ -66,29 +69,37 @@ function getCardValue(card) {
 }
 
 function cardGame() {
-  // let userCard = Math.floor(Math.random() * 13 + 2);
-  //firstPlayer.push(userCard);
+
+  // had to make two seperate variables for p1 and p2 or they would've kept getting the same cards each time 
+
   let card = deck[Math.floor(Math.random() * deck.length)];
   let card2 = deck[Math.floor(Math.random() * deck.length)];
 
+  // used set attribute to display cards on the DOM
+
   document.getElementById("card1").setAttribute("src", `./cards/${card}.png`);
 
-  // let dealerCard = Math.floor(Math.random() * 13 + 2);
-  //secondPlayer.push(dealerCard);
-
   document.getElementById("card2").setAttribute("src", `./cards/${card2}.png`);
+
+  // calling the getCardValue() function to apply it to the randomized decks
+
   let cardOneValue = getCardValue(card);
   let cardTwoValue = getCardValue(card2);
-  //scores
+
+  // used if statements to distribute points for p1 and p2
+
   if (cardOneValue === cardTwoValue) {
     player1Score -= 4;
     player2Score -= 4;
+    
+    // struggled with adding the draw 4 aspect of the game so I just commented it out 
     // let randWin = Math.round(Math.random());
     // if (randWin == 0) {
     //   player1Score += 4;
     // } else {
     //   player2Score += 4;
     // }
+
   } else if (cardOneValue > cardTwoValue) {
     player1Score++;
     player2Score--;
@@ -100,26 +111,23 @@ function cardGame() {
   //Display Scores
   document.getElementById("userScore").innerHTML = player1Score;
   document.getElementById("dealerScore").innerHTML = player2Score;
+  // calling checkingScores() function inside of cardGame
   checkingScores();
 }
-
-// function that randomizes second player's cards
-
-// create an if statement that will chose based on suit's random array
-
+// function that ends the game if either player's score reaches 0
 function checkingScores() {
   if (player1Score <= 0) {
     player1Score = 0;
     alert("You Lose!");
-    document.querySelector(".drawCard").disabled = true;
+    document.querySelector(".deal").disabled = true;
   } else if (player2Score <= 0) {
     player2Score = 0;
     alert("You Win!");
-    document.querySelector(".drawCard").disabled = true;
+    document.querySelector(".deal").disabled = true;
   }
 }
 
-// show me / hide me function 
+// show me / hide me function for instructions
 
 function showMe(){
   let instructions = document.querySelector(".instructions");
