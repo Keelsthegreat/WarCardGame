@@ -43,9 +43,9 @@ function shuffleDeck() {
   }
 }
 
+//function to find numbers inside of a string
 
 function getCardValue(card) {
-  //function to find numbers inside of a string
   //split card into two substrings delimiter is the "-"
   let cardValue = card.split("-")[0];
   if (!isNaN(cardValue)) {
