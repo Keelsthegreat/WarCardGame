@@ -30,7 +30,7 @@ function buildDeck() {
   console.log(deck);
 }
 
-// create a deck of cards
+
 
 //shuffle the cards
 function shuffleDeck() {
