@@ -43,12 +43,6 @@ function shuffleDeck() {
   }
 }
 
-//make the button
-const dealDeck = document.querySelector(".deal");
-dealDeck.addEventListener("click", () => {
-  deal = shuffleDeck(deck);
-});
-console.log(dealDeck);
 
 function getCardValue(card) {
   //split card into two substrings delimiter is the "-"
