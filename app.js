@@ -21,6 +21,7 @@ window.onload = () => {
 };
 
 // iterating through values and types arrays to match the name of the cards inside the cards folder
+//pushing values - types into deck
 function buildDeck() {
   for (let i = 0; i < types.length; i++) {
     for (let j = 0; j < values.length; j++) {
